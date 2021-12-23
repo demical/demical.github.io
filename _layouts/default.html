@@ -160,7 +160,9 @@
 								<section id="search" class="alt">
 									<form method="post" action="#">
 										<!-- <input type="text" name="query" id="query" placeholder="Search" /> -->
-										<input type="text" id="search-input" placeholder="search posts..">
+										<!--<input type="text" id="search-input" placeholder="search posts.."> -->
+										<script async src="https://cse.google.com/cse.js?cx=f4690610e49644a02"></script>
+<div class="gcse-search"></div>
 										<div id="results-container"></div>
 									</form>
 								</section>
@@ -247,19 +249,6 @@
 					</div>
 
 			</div>
-	<!-- scripy -->
-	<script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '/search.json',
-  searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-  noResultsText: 'No results found',
-  limit: 10,
-  fuzzy: false,
-  exclude: ['Welcome']
-})
-</script>
 
 		<!-- Scripts -->
 			<script src="/assets/js/jquery.min.js"></script>
@@ -267,7 +256,7 @@ SimpleJekyllSearch({
 			<script src="/assets/js/breakpoints.min.js"></script>
 			<script src="/assets/js/util.js"></script>
 			<script src="/assets/js/main.js"></script>
-	                <script src="https://unpkg.com/simple-jekyll-search@1.5.0/dest/simple-jekyll-search.min.js"></script>
+	             
 
 	</body>
 </html>
