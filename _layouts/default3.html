@@ -52,9 +52,13 @@
 
 							<!-- Search -->
 								<section id="search" class="alt">
-									<form method="post" action="#">
+									<!--<form method="post" action="#">
 										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
+									</form> -->
+									<div id="search-container">
+<input type="text" id="search-input" placeholder="Search">
+<ul id="results-container"></ul>
+</div>
 								</section>
 
 							<!-- Menu -->
@@ -146,6 +150,15 @@
 			<script src="/assets/js/breakpoints.min.js"></script>
 			<script src="/assets/js/util.js"></script>
 			<script src="/assets/js/main.js"></script>
+		        <script src="/assets/js/search-script.js" type="text/javascript"></script>
+	             <!-- script tag> -->
+	<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+})
+</script>
 
 	</body>
 </html>
